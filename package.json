@@ -1,0 +1,43 @@
+{
+  "name": "uirecorder",
+  "version": "2.5.27",
+  "description": "Tool for record ui test case",
+  "main": "./index",
+  "bin": {
+    "uirecorder": "./bin/uirecorder"
+  },
+  "dependencies": {
+    "async": "2.1.2",
+    "chai": "3.5.0",
+    "chromedriver": "2.x.x",
+    "co": "4.6.0",
+    "colors": "1.1.2",
+    "commander": "2.9.0",
+    "fs-extra": "1.0.0",
+    "i18n": "0.8.3",
+    "inquirer": "3.0.1",
+    "jwebdriver": "2.2.4",
+    "latest-version": "2.0.0",
+    "npminstall": "3.1.1",
+    "os-locale": "1.4.0",
+    "semver": "5.3.0",
+    "websocket": "1.0.22",
+    "resemblejs-node": "1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alibaba/uirecorder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/uirecorder/issues"
+  },
+  "keywords": [
+    "uirecorder",
+    "webdriver",
+    "test",
+    "recorder"
+  ],
+  "author": "Yanis Wang",
+  "license": "MIT"
+}
