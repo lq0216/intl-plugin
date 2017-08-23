@@ -1,10 +1,10 @@
 {
-  "name": "uirecorder",
-  "version": "2.5.27",
+  "name": "intl-plugin",
+  "version": "1.0.0",
   "description": "Tool for record ui test case",
   "main": "./index",
   "bin": {
-    "uirecorder": "./bin/uirecorder"
+    "uirecorder": "./bin/intl-plugin"
   },
   "dependencies": {
     "async": "2.1.2",
@@ -27,17 +27,15 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git@github.com:alibaba/uirecorder.git"
+    "url": "git@github.com:lq0216/intl-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/alibaba/uirecorder/issues"
+    "url": "https://github.com/lq0216/intl-plugin/issues"
   },
   "keywords": [
     "uirecorder",
-    "webdriver",
-    "test",
-    "recorder"
+    "intl-plugin"
   ],
-  "author": "Yanis Wang",
+  "author": "Yanis Wang, LQ",
   "license": "MIT"
 }
