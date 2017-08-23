@@ -7,15 +7,6 @@ var Intlplugin = require('../');
 
 var pkg = require('../package.json');
 
-function map(val) {
-    var objMap = {};
-    val.split(',').forEach(function(item){
-        var arrItem = item.split(/\s*=\s*/);
-        objMap[arrItem[0]] = arrItem[1]?arrItem[1]:true;
-    });
-    return objMap;
-}
-
 // stdout log
 var rawStdoutWrite = process.stdout.write;
 fs.writeFileSync('intl-plugin.log', '')
