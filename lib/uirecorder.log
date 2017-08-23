@@ -1,0 +1,12 @@
+    __  ______   ____                           __         
+   / / / /  _/  / __ \___  _________  _________/ /__  _____
+  / / / // /   / /_/ / _ \/ ___/ __ \/ ___/ __  / _ \/ ___/
+ / /_/ // /   / _, _/  __/ /__/ /_/ / /  / /_/ /  __/ /    
+ \____/___/  /_/ |_|\___/\___/\____/_/   \__,_/\___/_/    v2.5.27
+
+Official Site: http://uirecorder.com
+------------------------------------------------------------------
+
+config.json file search failed, please init first!
+
+? Dom path config, extend: id, name, class (data-id,data-name,type,data-type,role,data-role,data-value) 
