@@ -3,7 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var program = require('commander');
-var Intl-plugin = require('../');
+var Intlplugin = require('../');
 
 var pkg = require('../package.json');
 
@@ -43,21 +43,21 @@ program
 var cmd = null;
 
 program.command('init')
-    .description('Init UIRecorder intl plugin file')
+    .description('Init intl plugin file')
     .action(function(){
         cmd = 'init';
-        Intl-plugin.init({
+        Intlplugin.init({
             locale: program.lang,
             debug: program.debug
         });
     });
 
 program.parse(process.argv);
-Intl-plugin.checkUpdate(program.lang);
+Intlplugin.checkUpdate(program.lang);
 
 if(cmd === null){
     program.parse(process.argv);
-    UIRecorder.checkUpdate(program.lang);
+    Intlplugin.checkUpdate(program.lang);
 }
 
 // get test root

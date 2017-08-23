@@ -1,10 +1,10 @@
 {
   "name": "intl-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tool for record ui test case",
   "main": "./index",
   "bin": {
-    "uirecorder": "./bin/intl-plugin"
+    "intl-plugin": "./bin/intl-plugin"
   },
   "dependencies": {
     "async": "2.1.2",
