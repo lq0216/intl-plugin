@@ -3,7 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var program = require('commander');
-var UIRecorder = require('../');
+var Intl-plugin = require('../');
 
 var pkg = require('../package.json');
 
@@ -46,15 +46,14 @@ program.command('init')
     .description('Init UIRecorder intl plugin file')
     .action(function(){
         cmd = 'init';
-        UIRecorder.init({
+        Intl-plugin.init({
             locale: program.lang,
-            mobile: program.mobile,
             debug: program.debug
         });
     });
 
 program.parse(process.argv);
-UIRecorder.checkUpdate(program.lang);
+Intl-plugin.checkUpdate(program.lang);
 
 if(cmd === null){
     program.parse(process.argv);
