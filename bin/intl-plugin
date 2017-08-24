@@ -45,19 +45,3 @@ program.command('checkUpdate')
         Intlplugin.checkUpdate(program.lang);
     });
 
-if(cmd === null){
-    program.parse(process.argv);
-    Intlplugin.checkUpdate(program.lang);
-}
-
-// get test root
-function getRootPath(){
-    var rootPath = path.resolve('.');
-    while(rootPath){
-        if(fs.existsSync(rootPath + '/config.json')){
-            break;
-        }
-        rootPath = rootPath.substring(0, rootPath.lastIndexOf(path.sep));
-    }
-    return rootPath;
-}
