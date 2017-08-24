@@ -17,7 +17,13 @@ var pkg = require('../package.json');
 //console.log('');
 //console.log('------------------------------------------------------------------\n'.green);
 
-console.log((' intl-plugin ' + pkg.version).green)
+console.log('------------------------------------------------------------------\n'.green);
+console.log('******************************************************************\n'.green);
+console.log('\n'.green);
+console.log(('             Intl-plugin, Current Version: ' + pkg.version).green)
+console.log('\n'.green);
+console.log('******************************************************************\n'.green);
+console.log('------------------------------------------------------------------\n'.green);
 
 program
     .version(pkg.version)
