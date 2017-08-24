@@ -41,9 +41,6 @@ program.command('checkUpdate')
         Intlplugin.checkUpdate(program.lang);
     });
 
-program.parse(process.argv);
-Intlplugin.checkUpdate(program.lang);
-
 if(cmd === null){
     program.parse(process.argv);
     Intlplugin.checkUpdate(program.lang);
