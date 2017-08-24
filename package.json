@@ -1,6 +1,6 @@
 {
   "name": "intl-plugin",
-  "version": "1.0.8139",
+  "version": "1.0.8140",
   "description": "Tool for record ui test case",
   "main": "./index",
   "bin": {
@@ -9,7 +9,6 @@
   "dependencies": {
     "async": "^2.1.2",
     "chai": "^3.5.0",
-    "chromedriver": "^2.31.0",
     "co": "^4.6.0",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
