@@ -4,17 +4,10 @@ var fs = require('fs');
 var path = require('path');
 var program = require('commander');
 var Intlplugin = require('../');
+var colors = require('colors');
 
 var pkg = require('../package.json');
 
-// stdout log
-var rawStdoutWrite = process.stdout.write;
-fs.writeFileSync('intl-plugin.log', '')
-process.stdout.write = function(string, encoding, fileDescriptor) {
-    var nocolor = string.replace(/(\[\d+[mdc]|\[K)/gi, '');
-    fs.appendFileSync('intl-plugin.log', nocolor)
-    rawStdoutWrite.apply(process.stdout, arguments);
-}
 
 console.log(("    __  ______   ____                           __         \n\
    / / / /  _/  / __ \\___  _________  _________/ /__  _____\n\
