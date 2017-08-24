@@ -45,3 +45,13 @@ program.command('checkUpdate')
         Intlplugin.checkUpdate(program.lang);
     });
 
+function getRootPath(){
+    var rootPath = path.resolve('.');
+    while(rootPath){
+        if(fs.existsSync(rootPath + '/config.json')){
+            break;
+        }
+        rootPath = rootPath.substring(0, rootPath.lastIndexOf(path.sep));
+    }
+    return rootPath;
+}
