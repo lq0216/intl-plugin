@@ -1,6 +1,6 @@
 {
   "name": "intl-plugin",
-  "version": "1.0.81",
+  "version": "1.0.811",
   "description": "Tool for record ui test case",
   "main": "./index",
   "bin": {
