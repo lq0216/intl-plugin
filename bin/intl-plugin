@@ -21,7 +21,6 @@ console.log('------------------------------------------------------------------\
 
 program
     .version(pkg.version)
-    .option('-l, --lang <en|zh-cn|zh-tw>', 'change language')
 
 var cmd = null;
 
@@ -29,16 +28,14 @@ program.command('init')
     .description('Init intl plugin file')
     .action(function(){
         cmd = 'init';
-        Intlplugin.init({
-            locale: program.lang,
-        });
+        Intlplugin.init();
     });
 
 program.command('checkUpdate')
     .description('Check update')
     .action(function(){
         cmd = 'checkUpdate';
-        Intlplugin.checkUpdate(program.lang);
+        Intlplugin.checkUpdate();
     });
 
 program.parse(process.argv);
