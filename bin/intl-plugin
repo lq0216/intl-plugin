@@ -1,11 +1,7 @@
 #!/usr/bin/env node
-
-var fs = require('fs');
-var path = require('path');
 var program = require('commander');
 var Intlplugin = require('../');
 var colors = require('colors');
-
 var pkg = require('../package.json');
 
 
